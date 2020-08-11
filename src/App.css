@@ -15,7 +15,7 @@
   position: relative;
 }
 .marker{
-  background-image: url('helmet.jpg');
+  background-image: url("https://i.ibb.co/x1dR6Fw/helmet.jpg");
   background-size: cover;
   width: 25px;
   height: 25px;
@@ -24,7 +24,7 @@
   opacity:70%;
 }
 .shop{
-  background-image: url('shop.jpeg');
+  background-image: url('https://i.ibb.co/1M5B4gr/shop.jpg');
   background-size: cover;
   width: 25px;
   height: 25px;
