@@ -47,7 +47,7 @@ import * as mapboxgl from 'mapbox-gl';
             type: 'Feature',
             geometry: {
                 type:'point',
-                coordinates: [-89.5004081, 43.0650409]
+                coordinates: [-89.404081, 43.5650409]
             },
 
             properties: {
@@ -112,6 +112,8 @@ import * as mapboxgl from 'mapbox-gl';
         .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
         .addTo(map);
     }) ;
+    map.addControl(new
+        mapboxgl.NavigationControl());
     }
     render(){
         return(

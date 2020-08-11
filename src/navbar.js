@@ -9,9 +9,9 @@ function NavBar(){
             </div>
             <div>
         <ul>
-            <li><a href = "#">Home</a></li>
-            <li><a href = "#">Merch</a></li>
-            <li><a href ="#">Profile</a></li>
+            <button>Home</button>
+            <button>Merch</button>
+            <button>Profile</button>
         </ul> 
             </div>
         </div>
