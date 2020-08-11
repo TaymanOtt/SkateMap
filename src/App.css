@@ -1,28 +1,85 @@
 .App {
-  text-align: center;
+ 
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  min-width: 100vw;
+  grid-template-rows: 5% auto;
+  
+  
+ 
+  
 }
-
+.navBar{
+  display:grid;
+  grid-template-columns: 10% auto;
+}
+.navBar ul{
+  list-style-type: none;
+  
+}
+.navBar li{
+  display: inline-block;
+  padding: 3px;
+}
+.navBar li a{
+  color: #6dc289;
+}
+.navBar li a:hover{
+  color: #d39494;
+}
+.marker{
+  background-image: url('helmet.jpg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.shop{
+  background-image: url('shop.jpeg');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapbox-gl-popup{
+  max-width:200px;
+}
+.mapbox-gl-popup.content{
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+}
+.mapContainer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.acard{
+  border: 2px solid rgb(36, 0, 0);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  background:#05103f;
+  color:#6dc289
 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
+ 
+
 
 .App-link {
   color: #61dafb;
