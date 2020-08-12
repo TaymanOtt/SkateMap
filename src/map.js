@@ -3,13 +3,15 @@ import * as mapboxgl from 'mapbox-gl';
 //import 'mapbox-gl/dist/mapbox-gl.css'
 //import MapGL, {GeolocateControl} from 'react-map-gl';
 
+
+const apiKey = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxaWoifQ.w_GnggMDeyTSt2iskLx3QA';
  class Map extends React.Component {
     constructor(){
         super()
         this.mapRef = React.createRef()
     }
     componentDidMount(){
-        mapboxgl.accessToken = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZGRhZDk5MjF4azcyeWx2MW5nejM3eG8ifQ.LFKvbQSDAD2Dw5tDuKNulg';
+        mapboxgl.accessToken = apiKey;
 
         const map = new mapboxgl.Map({
             container: this.mapRef.current,

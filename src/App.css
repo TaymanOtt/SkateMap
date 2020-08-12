@@ -1,15 +1,15 @@
 .App {
- 
   background-color: #282c34;
   min-height: 100vh;
- 
   min-width: 100vw;
-  
-  
 }
 .navBar{
   display:grid;
   grid-template-columns: 10% auto;
+}
+.navBar button{
+color: white;
+background: black;
 }
 .home{
   position: relative;
