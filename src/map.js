@@ -1,11 +1,10 @@
 import React from 'react';
 import * as mapboxgl from 'mapbox-gl';
 
-//Test key
- //const pubTok = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZGRhZDk5MjF4azcyeWx2MW5nejM3eG8ifQ.LFKvbQSDAD2Dw5tDuKNulg'
+//Public token
+ const pubTok = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZGRhZDk5MjF4azcyeWx2MW5nejM3eG8ifQ.LFKvbQSDAD2Dw5tDuKNulg'
 
-//Build key
-const pubTok = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxaWoifQ.w_GnggMDeyTSt2iskLx3QA';
+
  class Map extends React.Component {
     constructor(){
         super()
