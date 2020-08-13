@@ -1,44 +1,11 @@
 import React from 'react';
 import './App.css';
+import {showHome} from './showHome.js';
+import {merch} from './showMerch.js';
+import {profile} from './showProfile';
 
 
 
-function showHome(){
-    let m = document.getElementsByClassName('merch')[0];
-let h = document.getElementsByClassName('home')[0];
-let p = document.getElementsByClassName('profile')[0];
-    if(h.style.display === 'none'){
-    h.style.display = 'block';
-    m.style.display = 'none';
-    p.style.display = 'none';
-}else {
-    h.style.display = 'none';
-}
-}
-function merch(){
-    let m = document.getElementsByClassName('merch')[0];
-    let h = document.getElementsByClassName('home')[0];
-    let p = document.getElementsByClassName('profile')[0];
-    if (m.style.display === 'none'){
-        m.style.display = "grid";
-        h.style.display = 'none';
-        p.style.display = 'none';
-    } else{
-        m.style.display = 'none';
-    }
-}
-function profile(){
-    let m = document.getElementsByClassName('merch')[0];
-let h = document.getElementsByClassName('home')[0];
-let p = document.getElementsByClassName('profile')[0];
-    if(p.style.display === 'none'){
-    p.style.display = 'block';
-    m.style.display = 'none';
-    h.style.display = 'none';
-}else {
-    p.style.display = 'none';
-}
-}
     
    
 

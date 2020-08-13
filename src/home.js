@@ -1,8 +1,5 @@
 import React from 'react';
-function close(){
-    let h = document.getElementsByClassName('home')[0];
-    h.style.display = 'none';
-}
+import {close} from './close';
 function Home() {
     return(
     <div className = 'home'>
