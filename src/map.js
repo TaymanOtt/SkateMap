@@ -1,17 +1,18 @@
 import React from 'react';
 import * as mapboxgl from 'mapbox-gl';
-//import 'mapbox-gl/dist/mapbox-gl.css'
-//import MapGL, {GeolocateControl} from 'react-map-gl';
 
+//Test key
+ //const pubTok = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZGRhZDk5MjF4azcyeWx2MW5nejM3eG8ifQ.LFKvbQSDAD2Dw5tDuKNulg'
 
-const apiKey = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxaWoifQ.w_GnggMDeyTSt2iskLx3QA';
+//Build key
+const pubTok = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxaWoifQ.w_GnggMDeyTSt2iskLx3QA';
  class Map extends React.Component {
     constructor(){
         super()
         this.mapRef = React.createRef()
     }
     componentDidMount(){
-        mapboxgl.accessToken = apiKey;
+        mapboxgl.accessToken = pubTok;
 
         const map = new mapboxgl.Map({
             container: this.mapRef.current,
@@ -27,7 +28,7 @@ const apiKey = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxa
                     type:'point',
                     coordinates: [-89.4988443, 43.0563123]
                 },
-
+        
                 properties: {
                     title: 'Big Bank',
                     description: 'a big bank/wall'
@@ -39,7 +40,7 @@ const apiKey = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxa
                     type:'point',
                     coordinates: [-89.5004081, 43.0650409]
                 },
-
+        
                 properties: {
                     title: 'Memorial High',
                     description: 'Ledges and some bleachers'
@@ -51,12 +52,13 @@ const apiKey = 'pk.eyJ1IjoidGF5bWFub3R0IiwiYSI6ImNrZHMwMjlnaTB2MDMyeHBiaGNhcHoxa
                 type:'point',
                 coordinates: [-89.404081, 43.5650409]
             },
-
+        
             properties: {
                 title: 'Memorial High',
                 description: 'Ledges and some bleachers'
         }}] 
         };
+        
         var shops = {
             type: 'FeatureCollection',
             features: [{

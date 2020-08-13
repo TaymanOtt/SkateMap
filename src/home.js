@@ -1,5 +1,8 @@
 import React from 'react';
-
+function close(){
+    let h = document.getElementsByClassName('home')[0];
+    h.style.display = 'none';
+}
 function Home() {
     return(
     <div className = 'home'>
@@ -8,6 +11,7 @@ function Home() {
         and other action sports enthusists in the 
         Madison area spend less time looking for spots 
         and more time skating.</p>
+        <button onClick = {close}>X</button>
     </div>);
 }
 
