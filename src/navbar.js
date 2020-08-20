@@ -9,7 +9,7 @@ function NavBar(){
     return(
         <div className = "navBar">
             <div>
-        <h5>SpottApp</h5>
+        <h5>StreetKey</h5>
             </div>
             
             <button onClick = {showHome}>Home</button>
