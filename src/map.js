@@ -15,9 +15,9 @@ import * as mapboxgl from 'mapbox-gl';
 
         const map = new mapboxgl.Map({
             container: this.mapRef.current,
-            style:'mapbox://styles/taymanott/ckdjd4pl102b51jndlykxc4ve',
+            style:'mapbox://styles/taymanott/cke3jbav2092j19rxk8oq64zb',
             center:[-89.376,43.082],
-            zoom:11.36
+            zoom:14.36
         });
 
         var geojson = {

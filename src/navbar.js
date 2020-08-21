@@ -3,13 +3,14 @@ import './App.css';
 import {showHome} from './showHome.js';
 import {merch} from './showMerch.js';
 import {profile} from './showProfile';
-
+import logo from './cool.png';
 function NavBar(){
     
     return(
         <div className = "navBar">
-            <div>
-        <h5>StreetKey</h5>
+            <div className ='brand'> 
+       
+        <img src={logo} alt="logo"></img>
             </div>
             
             <button onClick = {showHome}>Home</button>
