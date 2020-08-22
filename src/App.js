@@ -4,7 +4,7 @@ import Map from './map';
 import NavBar from './navbar.js';
 import Card from './Merch.js';
 import Home from './home.js';
-import Profile from './profile.js';
+import Key from './key.js';
 function App() {
 
   return (
@@ -13,7 +13,7 @@ function App() {
       
       <NavBar />
     <Card />
-    <Profile />
+    <Key />
       <Home/>
     <Map/>
     

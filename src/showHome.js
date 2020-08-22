@@ -4,7 +4,7 @@ document.getElementsByClassName('merch')[0];
 let h = 
 document.getElementsByClassName('home')[0];
 let p = 
-document.getElementsByClassName('profile')[0];
+document.getElementsByClassName('key')[0];
     if(h.style.display === 'none'){
     h.style.display = 'block';
     m.style.display = 'none';

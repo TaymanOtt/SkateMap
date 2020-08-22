@@ -17,7 +17,7 @@ import * as mapboxgl from 'mapbox-gl';
             container: this.mapRef.current,
             style:'mapbox://styles/taymanott/cke3jbav2092j19rxk8oq64zb',
             center:[-89.383,43.074],
-            zoom:15.36
+            zoom:10.38
         });
 
         var geojson = {
@@ -116,48 +116,62 @@ import * as mapboxgl from 'mapbox-gl';
             }
             
         },
+        {
+            type: 'Feature',
+            geometry:{
+                type: 'point',
+                coordinates:[-89.3804286,43.0762359]
+            },
+            properties:{
+                title: 'The Garden',
+                description: 'climb the hill and find out'
+            }
+            
+        },  
     ] 
         };
         
-        var shops = {
-            type: 'FeatureCollection',
-            features: [{
-                type: 'Feature',
-                geometry: {
-                    type:'point',
-                    coordinates: [-89.3926613, 43.0752002]
-                },
-
-                properties: {
-                    title: 'Freedom Skate Shop',
-                    description: 'Skate Shop'
-                }
-            },
-            {
-                type: 'Feature',
-                geometry: {
-                    type:'point',
-                    coordinates: [-89.3666902, 43.0841213]
-                },
-
-                properties: {
-                    title: 'Alumni Board Shop',
-                    description: 'Skate Shop'
-            }
+       
+    var parks = { type: 'FeatureCollection',
+    features: [{
+        type: 'Feature',
+        geometry: {
+            type:'point',
+            coordinates: [-89.3663263, 43.0845479]
         },
-        {
-            type: 'Feature',
-            geometry: {
-                type:'point',
-                coordinates: [-89.2963648, 43.130259]
-            },
 
-            properties: {
-                title: 'Focus Board Shop',
-                description: 'Skate Shop'
-        }}] 
-        };
+        properties: {
+            title: 'Goodman Skatepark',
+            description: 'the newest and largest'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type:'point',
+            coordinates: [-89.3435772, 43.0975515]
+        },
 
+        properties: {
+            title: 'GOODMAN IRONWORKS',
+            description: 'only the real ones ride this park'
+        }
+    },
+    {
+        type: 'Feature',
+        geometry: {
+            type:'point',
+            coordinates: [-89.4988443, 43.0563123]
+        },
+
+        properties: {
+            title: '',
+            description: 'the newest and largest'
+        }
+    },
+]
+}    
+    
       geojson.features.forEach(function(marker){
           var el = document.createElement('div');
           el.className = 'marker';
@@ -167,9 +181,10 @@ import * as mapboxgl from 'mapbox-gl';
           .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
           .addTo(map);
       }) ;
-      shops.features.forEach(function(marker){
+     
+    parks.features.forEach(function(marker){
         var el = document.createElement('div');
-        el.className = 'shop';
+        el.className = 'parks';
         new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new mapboxgl.Popup({offset:25})
@@ -190,7 +205,6 @@ import * as mapboxgl from 'mapbox-gl';
         map.addLayer(
             {
                 'id': '3d-buildings',
-                'pitch': 40,
                 'source': 'composite',
                 'source-layer': 'building',
                 'filter': ['==', 'extrude', 'true'],

@@ -1,12 +1,12 @@
 import React from 'react';
 import {close} from './close.js'
-function Profile(){
+function Key(){
     return(
-        <div className = "profile">
+        <div className = "key">
             <h3>Profile</h3>
             <button onClick={close}>X</button>
         </div>
     )
     
 }
-export default Profile;
+export default Key;
