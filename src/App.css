@@ -61,6 +61,26 @@ border-radius:8px;
   color: white;
   border: 3px solid white;
 }
+.keyList{
+  display:grid;
+}
+.keyListItem{
+  display:grid;
+  grid-template-columns: auto auto;
+  border-top: 1px solid white;
+}
+.keyListItem img{
+  height: 3vh;
+  width: 3vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+  border-radius:50%;
+}
+.closer{
+  margin:auto;
+  padding: auto;
+}
 .marker{
   background-image: url("https://i.ibb.co/x1dR6Fw/helmet.jpg");
   background-size: cover;

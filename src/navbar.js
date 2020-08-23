@@ -3,7 +3,7 @@ import './App.css';
 import {showHome} from './showHome.js';
 import {merch} from './showMerch.js';
 import {profile} from './showProfile';
-import logo from './cool.png';
+import logo from './logo.png';
 function NavBar(){
     
     return(
@@ -14,8 +14,8 @@ function NavBar(){
             </div>
             
             <button onClick = {showHome}>Home</button>
-            <button onClick = {merch}>Key</button>
-            <button onClick = {profile}>Profile</button>
+            <button onClick = {merch}>Merch</button>
+            <button onClick = {profile}>Key</button>
             
         </div>
     );
