@@ -14,7 +14,7 @@ function NavBar(){
             </div>
             
             <button onClick = {showHome}>Home</button>
-            <button onClick = {merch}>Merch</button>
+            <button onClick = {merch}>Donate</button>
             <button onClick = {profile}>Key</button>
             
         </div>

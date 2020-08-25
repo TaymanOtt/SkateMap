@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import {close} from "./close.js";
-//import StripeCheckout from 'react-stripe-checkout'
 
 
 function Card(){
-//function handleToken(token, addresses){
-    //console.log({ token, addresses})
-//}   
+
     return(<div className = "merch">
-           <h5>Merch</h5>
+        <div>
+           <h2>Merch</h2>
+           <p>T-shirts and stickers coming soon!</p>
+           </div>
            <div>
            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
@@ -19,7 +19,7 @@ function Card(){
 </form>
  
            </div>
-           <p>donate</p>
+    
            <button onClick = {close}>X</button>
 </div>);
 }
