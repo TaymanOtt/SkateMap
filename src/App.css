@@ -3,7 +3,7 @@
   min-height: 100vh;
   min-width: 100vw;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 18vh auto;
 }
 .navBar{
   color: white;
@@ -13,29 +13,23 @@
   display:grid;
   padding: 1vh;
   text-align: center;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 20vw auto auto auto;
 }
 .navBar button{
-  font-size: 5vw;
+  font-size: 4vw;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 color: white;
 background: black;
 margin: 1vw;
-padding: none;
 border-radius:8px;
 }
 .navBar button:hover{
 background:#222;
 border-radius:3px;
 }
-.brand{
-  display:grid;
-  
-}
 .brand img{
 height: 17vh;
-width: 14vw;
+width: 20vw;
 margin: auto;
 border-radius:8px;
 }
@@ -115,30 +109,5 @@ border-radius:8px;
   left: 0;
   bottom: 0;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 
- 
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

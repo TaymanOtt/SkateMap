@@ -9,7 +9,6 @@ function NavBar(){
     return(
         <div className = "navBar">
             <div className ='brand'> 
-       
         <img src={logo} alt="logo"></img>
             </div>
             
