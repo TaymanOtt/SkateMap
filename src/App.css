@@ -71,9 +71,13 @@ border-radius:8px;
   
   border-radius:50%;
 }
-.closer{
-  margin:auto;
-  padding: auto;
+.closeBtn button{
+  background: darkslategrey;
+  color: maroon;
+}
+.closeBtn button:hover{
+  background: black;
+  color: white;
 }
 .marker{
   background-image: url("https://i.ibb.co/x1dR6Fw/helmet.jpg");

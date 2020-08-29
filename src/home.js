@@ -8,7 +8,9 @@ function Home() {
         and other action sports enthusists in the 
         Madison area spend less time looking for spots 
         and more time skating.</p>
+        <div className = 'closeBtn'>
         <button onClick = {close}>X</button>
+        </div>
     </div>);
 }
 

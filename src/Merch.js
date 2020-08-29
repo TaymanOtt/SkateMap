@@ -19,8 +19,9 @@ function Card(){
 </form>
  
            </div>
-    
+    <div className = "closeBtn">
            <button onClick = {close}>X</button>
+           </div>
 </div>);
 }
 export default Card;

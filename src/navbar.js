@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Link, withRouter} from "react-router-dom";
 import {showHome} from './showHome.js';
 import {merch} from './showMerch.js';
 import {profile} from './showProfile';
@@ -20,3 +21,4 @@ function NavBar(){
     );
 }
 export default NavBar;
+

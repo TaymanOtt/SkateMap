@@ -15,7 +15,7 @@ function Key(){
                 </div>
                 
             </div>
-            <div className='closer'>
+            <div className='closeBtn'>
             <button onClick={close}>X</button>
             </div>
         </div>
