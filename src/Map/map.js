@@ -26,7 +26,7 @@ import spots from './spots.js'
        
     
     
-      spots.features.forEach(function(marker){
+    spots.features.forEach(function(marker){
           var el = document.createElement('div');
           el.className = 'marker';
           new mapboxgl.Marker(el)
@@ -94,7 +94,7 @@ import spots from './spots.js'
     render(){
         return(
            
-            <div style ={{width: "100%", height:'90vh',
+            <div style ={{width: "100%", height:'100vh',
              border:'2px solid #113611'}} ref ={this.mapRef}>
 
             </div>

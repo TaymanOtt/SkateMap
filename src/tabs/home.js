@@ -1,5 +1,5 @@
 import React from 'react';
-import {close} from './close';
+import {close} from '../functions/close.js';
 function Home() {
     return(
     <div className = 'home'>

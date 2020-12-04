@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import {close} from "./close.js";
+import {close} from "../functions/close.js";
 
 
 function Card(){
